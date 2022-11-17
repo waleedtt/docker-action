@@ -2,5 +2,5 @@
 
 echo "Hello $1"
 
-time=$(date)
-echo "time=$time" >> $GITHUB_OUTPUT
+time=1
+echo "cache-hit=$time" >> $GITHUB_OUTPUT
