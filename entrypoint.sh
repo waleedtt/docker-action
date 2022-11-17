@@ -1,6 +1,9 @@
 #!/bin/sh -l
 
 echo "Hello $1"
-echo "INPUT ${INPUT_WHO-TO-GREET}"
+name='INPUT_WHO-TO-GREET'
+echo "INPUT ${!name}"
+
+
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
