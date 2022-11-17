@@ -6,4 +6,4 @@ COPY ./go /home/
 RUN go mod init args
 RUN go build
 
-ENTRYPOINT ["./args"]
+ENTRYPOINT ["/home/args"]
