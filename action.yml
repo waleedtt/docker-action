@@ -16,7 +16,7 @@ outputs:
     description: 'A boolean value to indicate an exact match was found for the primary key'
 runs:
   using: 'docker'
-  image: 'DockerfileGo'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.path }}
     - ${{ inputs.key }}
