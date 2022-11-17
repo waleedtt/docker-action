@@ -17,7 +17,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.path }}
-    - ${{ inputs.key }}
-    - ${{ inputs.restore-keys }}
+  # args:
+  #   - ${{ inputs.path }}
+  #   - ${{ inputs.key }}
+  #   - ${{ inputs.restore-keys }}
