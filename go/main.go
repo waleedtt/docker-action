@@ -18,4 +18,8 @@ func main(){
 
 	out1, _ := exec.Command("ls", "-la", "/").Output()
 	fmt.Printf("%s", out1)
+
+	out2, _ := exec.Command("pwd").Output()
+	fmt.Printf("%s", out2)
+
 }
