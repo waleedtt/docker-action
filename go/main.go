@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-	fmt.Println("path:", os.Getenv("path"))
-	fmt.Println("key:", os.Getenv("key"))
-	fmt.Println("key:", os.Getenv("restore-keys"))
+	fmt.Println("path:", os.Getenv("INPUT_PATH"))
+	fmt.Println("key:", os.Getenv("INPUT_KEY"))
+	fmt.Println("key:", os.Getenv("INPUT_RESTORE-KEYS"))
 }
