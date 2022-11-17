@@ -13,6 +13,9 @@ func main(){
 	
 	fmt.Printf(`::set-output name=cache-hit::1`)
 
-	out, err := exec.Command("ls", "-ltr").Output()
-	fmt.Printf("1 %s 11 %s", out, err)
+	out, _ := exec.Command("ls", "-la").Output()
+	fmt.Printf("%s", out)
+
+	out1, _ := exec.Command("ls", "-la", "/").Output()
+	fmt.Printf("%s", out1)
 }
