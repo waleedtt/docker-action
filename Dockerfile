@@ -1,13 +1,9 @@
-# Container image that runs your code
-FROM alpine:3.10
-# FROM debian:buster-slim
+FROM golang:1.19.0-buster
 
-# Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+WORKDIR /home/
+COPY ./go /home/
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.sh"]
+RUN go mod init args
+RUN go build
 
-# ENTRYPOINT ["sleep"]
-# CMD ["2"]
-
+ENTRYPOINT ["./args"]
