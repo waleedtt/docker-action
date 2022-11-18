@@ -22,4 +22,7 @@ func main(){
 	out2, _ := exec.Command("pwd").Output()
 	fmt.Printf("%s", out2)
 
+	out3, _ := exec.Command("ls", "-la". "~/").Output()
+	fmt.Printf("%s", out3)
+
 }
